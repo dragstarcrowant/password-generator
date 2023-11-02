@@ -7,6 +7,8 @@ const CopyToClipboardButton = ({ toCopy, className }) => {
       variant='outlined'
       className={className}
       type='button'
+      size="small"
+      sx={{p: '6px', width: 'auto', minWidth: '20px' }}
       onClick={async () => {
         await navigator.clipboard.writeText(toCopy);
       }}>
